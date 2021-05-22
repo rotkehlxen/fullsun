@@ -9,40 +9,42 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mystyles.css"
 
-    <title>suncal</title>
   </head>
 
   <body>
+
+    <div class="container-fluid">
     <h1>Create your sun calendar</h1>
 
-<form>
-  <div class="mb-3">
-    <label for="latitude" class="form-label">Latitude</label>
-    <input type="number" min="-90" max="90" step="any" class="form-control" id="latitude">
-    <div id="latitude-help" class="form-text">North-South position, float between -90 and 90 degrees</div>
-  </div>
-  
-  <div class="mb-3">
-    <label for="longitude" class="form-label">Longitude</label>
-    <input type="number" min="-180" max="180" step="any" class="form-control" id="longitude">
-    <div id="longitude-help" class="form-text">East-West position, float between -180 and 180 degrees</div>
-  </div>
+      <form>
+        <div class="mb-3">
+          <label for="latitude" class="form-label">Latitude</label>
+          <input type="number" min="-90" max="90" step="any" class="form-control" id="latitude">
+          <div id="latitude-help" class="form-text">North-South position, float between -90 and 90 degrees</div>
+        </div>
+      
+        <div class="mb-3">
+          <label for="longitude" class="form-label">Longitude</label>
+          <input type="number" min="-180" max="180" step="any" class="form-control" id="longitude">
+          <div id="longitude-help" class="form-text">East-West position, float between -180 and 180 degrees</div>
+        </div>
 
-  <div class="mb-3">
-    <label for="from-date" class="form-label">From</label>
-    <input type="date" class="form-control" id="from-date">
-    <div id="from-date-help" class="form-text">Start date of sun calendar</div>
-  </div>
+        <div class="mb-3">
+          <label for="from-date" class="form-label">From</label>
+          <input type="date" class="form-control" id="from-date">
+          <div id="from-date-help" class="form-text">Start date of sun calendar</div>
+        </div>
 
-  <div class="mb-3">
-    <label for="to-date" class="form-label">To</label>
-    <input type="date" class="form-control" id="to-date">
-    <div id="to-date-help" class="form-text">End date of sun calendar</div>
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Create ics file</button>
+        <div class="mb-3">
+          <label for="to-date" class="form-label">To</label>
+          <input type="date" class="form-control" id="to-date">
+          <div id="to-date-help" class="form-text">End date of sun calendar</div>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Create ics file</button>
 
-</form>
+    </form>
+  </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
