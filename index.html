@@ -15,50 +15,59 @@
   <body>
 
     <div class="container-fluid">
+    
     <h1>Create your sun calendar</h1>
-
-      <form>
+      
+      <!-- this makes a GET request to URL: here/parameters.html?latidude=..&longitude=....
+        The name attribute of the input fields is used to create parameter names for the URL! -->
+      <form action="parameters.html" method="GET">
         <div class="mb-3">
           <label for="latitude" class="form-label">Latitude</label>
-          <input type="number" min="-90" max="90" step="any" class="form-control" id="latitude">
+          <input name="latitude" 
+                 type="number" 
+                 min="-90" 
+                 max="90" 
+                 step="any" 
+                 class="form-control" 
+                 id="latitude">
           <div id="latitude-help" class="form-text">North-South position, float between -90 and 90 degrees</div>
         </div>
       
         <div class="mb-3">
           <label for="longitude" class="form-label">Longitude</label>
-          <input type="number" min="-180" max="180" step="any" class="form-control" id="longitude">
+          <input name="longitude" 
+                 type="number" 
+                 min="-180" 
+                 max="180" 
+                 step="any" 
+                 class="form-control" 
+                 id="longitude">
           <div id="longitude-help" class="form-text">East-West position, float between -180 and 180 degrees</div>
         </div>
 
         <div class="mb-3">
           <label for="from-date" class="form-label">From</label>
-          <input type="date" class="form-control" id="from-date">
+          <input name="fromDate" 
+                 type="date" 
+                 class="form-control" 
+                 id="from-date">
           <div id="from-date-help" class="form-text">Start date of sun calendar</div>
         </div>
 
         <div class="mb-3">
           <label for="to-date" class="form-label">To</label>
-          <input type="date" class="form-control" id="to-date">
+          <input name="toDate" 
+                 type="date" 
+                 class="form-control" 
+                 id="to-date">
           <div id="to-date-help" class="form-text">End date of sun calendar</div>
         </div>
       
         <button type="submit" class="btn btn-primary">Create ics file</button>
 
-    </form>
-
-
-    <div class="mb-3">
-      <!-- this empty paragraph is just a dirty hack to create vertical spacing-->
-      <p> </p>
-      <button onclick="printSuncalStatus();" class="btn btn-primary"> show parameters </button> 
+      </form>
 
     </div>
-
-    <div id="statusMessage"></div>
-
-  </div>
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper and personal scripts-->

@@ -1,4 +1,5 @@
 function printSuncalStatus(){
+	// deprecated
 	const latitude = document.getElementById("latitude").value
 	const longitude = document.getElementById("longitude").value
 	const fromDate = document.getElementById("from-date").value
