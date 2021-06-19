@@ -39,6 +39,6 @@ function validateToDate() {
 }
 
 window.onload = function () {
-  document.getElementById("to-date").oninput = validateToDate;
-  document.getElementById("from-date").oninput = validateFromDate;
+  toDateField.oninput = validateToDate;
+  fromDateField.oninput = validateFromDate;
 };
