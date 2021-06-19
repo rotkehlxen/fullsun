@@ -7,7 +7,7 @@ function validateFromDate() {
   const fromDate = new Date(fromDateField.value);
   const toDate = new Date(toDateField.value);
 
-  // only validate if the toDate has ben set already
+  // only validate if the toDate has been set previously
   if (toDate.getTime()) {
     toDateField.setCustomValidity("");
     if (toDate.getTime() >= fromDate.getTime()) {
@@ -25,7 +25,7 @@ function validateToDate() {
   const fromDate = new Date(fromDateField.value);
   const toDate = new Date(toDateField.value);
 
-  // only validate if fromDate has ben set already
+  // only validate if fromDate has been set previously
   if (fromDate.getTime()) {
     fromDateField.setCustomValidity("");
     if (toDate.getTime() >= fromDate.getTime()) {
