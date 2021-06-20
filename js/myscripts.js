@@ -1,3 +1,5 @@
+"use strict";
+
 // get html elements
 const fromDateField = document.getElementById("from-date");
 const toDateField = document.getElementById("to-date");
