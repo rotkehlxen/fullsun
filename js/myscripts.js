@@ -4,7 +4,7 @@
 const fromDateField = document.getElementById("from-date");
 const toDateField = document.getElementById("to-date");
 
-// validate the fromDate field
+// validate fromDate field
 function validateFromDate() {
   const fromDate = new Date(fromDateField.value);
   const toDate = new Date(toDateField.value);
