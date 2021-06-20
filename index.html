@@ -1,83 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS and personal styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/mystyles.css"
-
   </head>
 
   <body>
-
     <div class="container-fluid">
-    
-    <h1>Create your sun calendar</h1>
-      
+      <h1>Create your sun calendar</h1>
+
       <!-- this makes a GET request to URL: here/parameters.html?latidude=..&longitude=....
         The name attribute of the input fields is used to create parameter names for the URL! -->
       <form action="parameters.html" method="GET">
         <div class="mb-3">
           <label for="latitude" class="form-label">Latitude</label>
-          <input name="latitude" 
-                 type="number" 
-                 min="-90" 
-                 max="90" 
-                 step="any" 
-                 placeholder="52.52437" 
-                 class="form-control" 
-                 id="latitude"
-                 required>
-          <div id="latitude-help" class="form-text">North-South position, float between -90 and 90 degrees</div>
+          <input
+            name="latitude"
+            type="number"
+            min="-90"
+            max="90"
+            step="any"
+            placeholder="52.52437"
+            class="form-control"
+            id="latitude"
+            required
+          />
+          <div id="latitude-help" class="form-text">
+            North-South position, float between -90 and 90 degrees
+          </div>
         </div>
-      
+
         <div class="mb-3">
           <label for="longitude" class="form-label">Longitude</label>
-          <input name="longitude" 
-                 type="number" 
-                 min="-180" 
-                 max="180" 
-                 step="any" 
-                 placeholder="13.41053" 
-                 class="form-control" 
-                 id="longitude"
-                 required>
-          <div id="longitude-help" class="form-text">East-West position, float between -180 and 180 degrees</div>
+          <input
+            name="longitude"
+            type="number"
+            min="-180"
+            max="180"
+            step="any"
+            placeholder="13.41053"
+            class="form-control"
+            id="longitude"
+            required
+          />
+          <div id="longitude-help" class="form-text">
+            East-West position, float between -180 and 180 degrees
+          </div>
         </div>
 
         <div class="mb-3">
           <label for="from-date" class="form-label">From</label>
-          <input name="fromDate" 
-                 type="date" 
-                 class="form-control" 
-                 id="from-date"
-                 required="">
-          <div id="from-date-help" class="form-text">Start date of sun calendar</div>
+          <input
+            name="fromDate"
+            type="date"
+            class="form-control"
+            id="from-date"
+            required=""
+          />
+          <div id="from-date-help" class="form-text">
+            Start date of sun calendar
+          </div>
         </div>
 
         <div class="mb-3">
           <label for="to-date" class="form-label">To</label>
-          <input name="toDate" 
-                 type="date" 
-                 class="form-control" 
-                 id="to-date"
-                 required>
-          <div id="to-date-help" class="form-text">End date of sun calendar</div>
+          <input
+            name="toDate"
+            type="date"
+            class="form-control"
+            id="to-date"
+            required
+          />
+          <div id="to-date-help" class="form-text">
+            End date of sun calendar
+          </div>
         </div>
-      
+
         <button type="submit" class="btn btn-primary">Create ics file</button>
-
       </form>
-
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper and personal scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper and personal scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/myscripts.js"></script>
   </body>
 </html>
